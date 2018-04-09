@@ -1,9 +1,10 @@
 <?php
 
+require('Modele/modele.php');
 require('Controls/controls.php');
 
 if (isset($_GET['action']) && ($_GET['action'] == 'Fightpage')) {
-        fightPage();
+        FightPage();
   } else {
-        indexPhp();  // by default
+        HomePage();  // by default
   }

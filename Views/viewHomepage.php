@@ -1,10 +1,10 @@
 <?php $title = 'HFB | Home'; ?>
 
+<!--Temporarily buffered (create the function content next)-->
 
-// Temporarily buffered (create the function content next)
 <?php ob_start(); ?>
 
-    HTML CONTENT   
+    <h1>I am the content of the homepage!</h1>
 
 <?php $content = ob_get_clean(); ?>
 

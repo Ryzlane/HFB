@@ -1,5 +1,5 @@
-/* This page is a TEMPLATE which, unusable alone. 
-It contains content common to all pages. */
+<!-- This page is a TEMPLATE, unusable alone. 
+It contains content common to all pages. -->
 
 <!DOCTYPE html>
 <html lang="en">
