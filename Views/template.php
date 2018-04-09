@@ -12,7 +12,13 @@ It contains content common to all pages. -->
     <title><?= $title; ?></title>
 </head>
 <body>
-    <header>This is an awesome header</header>
+    <header>
+        <!-- <img src="#" alt="logo"> -->
+        <span class="header__sign">
+            <a href="#" class="sign__sign-up">Sign up</a>
+            <a href="#" class="sign__sign-in">Sign in</a>
+        </span>
+    </header>
     
     <?= $content; ?>
 

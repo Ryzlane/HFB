@@ -1,3 +1,46 @@
+/***************
+
+    GENERAL
+
+***************/
+
+@font-face {
+	font-family: 'Gotham';
+	src: url('../Fonts/Gotham-Medium.otf');
+}
+
+@font-face {
+    font-family: 'Gotham';
+	src: url('../Fonts/Gotham-Bold.otf');
+	font-weight: bold;
+}
+
 body {
-    color: red;
+    font-family: 'Gotham';
+    font-size: 0.8em;
+}
+
+/***************
+
+     HEADER
+
+***************/
+
+header {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: right;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.header__sign {
+    margin-right: 50px;
+    font-weight: bold;
+}
+
+.sign__sign-in {
+    margin-left: 20px;
 }
