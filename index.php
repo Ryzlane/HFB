@@ -1,6 +1,6 @@
 <?php
 
-require('controls/controls.php');
+require('Controls/controls.php');
 
 if (isset($_GET['action']) && ($_GET['action'] == 'Fightpage')) {
         fightPage();
