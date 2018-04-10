@@ -1,3 +1,14 @@
+/* .test {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    background-color: red;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 100;
+} */
+
 /***************
 
     GENERAL
@@ -43,4 +54,97 @@ header {
 
 .sign__sign-in {
     margin-left: 20px;
+}
+
+/***************
+
+     ACCUEIL
+
+***************/
+
+/*** SECTION LIVE BATTLES ***/
+
+.live-battles__title-bloc {
+    width: 130px;
+    height: 40px;
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-bottom: 25px;
+    background-color: #761d2d;
+    text-align: center;
+    line-height: 40px;
+}
+
+.live-battles__title {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.live-battles__container {
+    position: relative;
+    width: 100%;
+    height: 520px;
+}
+
+.live-battles__blocs {
+    position: absolute;
+    height: 100%;
+    width: calc(100% - 20px);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.live-battles__bloc {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: calc(100% / 5 - 10px);
+    float: left;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.live-battles__bloc[data-bloc="01"], .live-battles__bloc[data-bloc="02"], .live-battles__bloc[data-bloc="03"], .live-battles__bloc[data-bloc="04"] {
+    margin-right: 12px;
+}
+
+.live-battles__bloc .picture--bottom {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+
+.live-battles__bloc .picture--top {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+}
+
+.live-battles__bloc .picture__effect {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 1;
+    background: linear-gradient(142deg, #384259, #761d2d);
+    opacity: 0.38;
+}
+
+.live-battles__diagonal {
+    position: absolute;
+    background-color: #ffffff;
+    width: 2px;
+    height: 200%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) rotate(30.5deg);
+    transform-origin: 50% 50%;
+    z-index: 2;
 }
