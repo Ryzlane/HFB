@@ -9,6 +9,11 @@ require './Modele/modele.php';
     };
 
     function FightPage() {
-        require './Views/Fightpage.php';
+        require './Views/viewFightpage.php';
+        // fetchs, ...
+    };
+
+    function LogPage() {
+        require './Views/Logpage.php';
         // fetchs, ...
     };

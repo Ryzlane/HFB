@@ -4,7 +4,9 @@ require('Modele/modele.php');
 require('Controls/controls.php');
 
 if (isset($_GET['action']) && ($_GET['action'] == 'Fightpage')) {
-        FightPage();
+      HomePage();
+  } elseif (isset($_GET['action']) && ($_GET['action'] == 'Logpage')) {
+      LogPage();
   } else {
-        HomePage();  // by default
+      FightPage();  // by default
   }

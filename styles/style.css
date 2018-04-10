@@ -26,6 +26,12 @@
 	font-weight: bold;
 }
 
+@font-face {
+    font-family: 'Gotham';
+    src: url('../Fonts/Gotham-Light.otf');
+	font-weight: lighter;
+}
+
 body {
     font-family: 'Gotham';
     font-size: 0.8em;
@@ -44,7 +50,7 @@ header {
     line-height: 60px;
     text-align: right;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+    z-index: 1;
 }
 
 .header__sign {
@@ -76,13 +82,13 @@ header {
     margin-top: 25px;
     margin-left: 10px;
     margin-bottom: 25px;
-    border: solid 2px #761d2d;
+    border: solid 2px #ab2940;
     text-align: center;
     line-height: 40px;
 }
 
 .live-battles__title {
-    color: #761d2d;
+    color: #ab2940;
     font-size: 14px;
     font-weight: bold;
 }
@@ -180,7 +186,7 @@ header {
 }
 
 .name-rating__rating--top {
-    background-color: #384259;
+    background-color: #4d669f;
     width: 60px;
     height: 25px;
     text-align: center;
@@ -199,7 +205,7 @@ header {
 }
 
 .name-rating__rating--bottom {
-    background-color: #64231f;
+    background-color: #ab2940;
     width: 60px;
     height: 25px;
     text-align: center;
@@ -332,7 +338,7 @@ header {
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #384259;
+    background-color: #4d669f;
     width: 60px;
     height: 25px;
     text-align: center;
@@ -354,7 +360,7 @@ header {
     left: 50%;
     transform: translateX(-50%);
     bottom: -5px;
-    background-color: #64231f;
+    background-color: #ab2940;
     width: 60px;
     height: 25px;
     text-align: center;
@@ -385,13 +391,13 @@ header {
     margin-top: 75px;
     margin-left: 10px;
     margin-bottom: -25px;
-    border: solid 2px #761d2d;
+    border: solid 2px #ab2940;
     text-align: center;
     line-height: 40px;
 }
 
 .myprofile__title {
-    color: #761d2d;
+    color: #ab2940;
     font-size: 14px;
     font-weight: bold;
 }
@@ -550,4 +556,278 @@ header {
 
 .leaderboard__table__won-bets {
     font-size: 22px;
+}
+
+/***************
+
+   FIGHT PAGE
+
+***************/
+
+/***************
+
+     FIGHT
+
+***************/
+#fight {
+    position: relative;
+    width: 70%;
+}
+
+.bg-video {
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.fight__timer {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 22px;
+    font-family: 'IBM Plex Mono';
+    font-weight: 700;
+    color: #ffffff;
+}
+
+/*** FIRST PLAYER ***/
+
+.fight__first-player {
+    position: absolute;
+    text-align: center;
+    top: 100px;
+    left: 100px;
+    width: 300px;
+    height: 550px;
+}
+
+.player__name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.first-player__container {
+    position: absolute;
+    height: 400px;
+    width: 300px;
+    background-color: #656565;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.first-player--color {
+    width: 80%;
+    height: 10px;
+    margin-left: 10%;
+    background-color: #4d669f;
+}
+
+.bet--first-player {
+    position: absolute;
+    top: 465px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90px;
+    height: 30px;
+    font-size: 12px;
+    background-color: #4d669f;
+    color: #ffffff;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.player__desc {
+    position: absolute;
+    bottom: 0;
+    color: #9c9c9c;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: lighter;
+    text-align: left;
+}
+
+/*** SECOND PLAYER ***/
+
+.fight__second-player {
+    position: absolute;
+    text-align: center;
+    top: 100px;
+    right: 100px;
+    width: 300px;
+    height: 550px;
+}
+
+.second-player__container {
+    position: absolute;
+    height: 400px;
+    width: 300px;
+    background-color: #656565;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.second-player--color {
+    width: 80%;
+    height: 10px;
+    margin-left: 10%;
+    background-color: #ab2940;
+}
+
+.bet--second-player {
+    position: absolute;
+    top: 465px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90px;
+    height: 30px;
+    font-size: 12px;
+    background-color: #ab2940;
+    color: #ffffff;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/***************
+
+ GAME INTERFACE
+
+***************/
+
+#game-interface {
+    margin-top: 375px;
+    margin-left: 100px;
+    width: calc(70% - 100px);
+}
+
+.game-interface__title-block {
+    width: 180px;
+    height: 40px;
+    margin-top: 25px;
+    margin-bottom: 35px;
+    border: solid 2px #ab2940;
+    text-align: center;
+    line-height: 40px;
+}
+
+.game-interface__title {
+    color: #ab2940;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.game-interface__all-percentage {
+    position: relative;
+    width: calc(100% - 100px);
+    height: 35px;
+    background-color: #e1e1e1;
+}
+
+.percentage--first-player {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    height: 30px;
+    width: 48.8%;
+    background-color: #4d669f;
+    -webkit-clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0% 100%);
+    clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0% 100%);
+}
+
+.first-player--cote {
+    position: absolute;
+    top: 55%;
+    left: 40px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+}
+
+.percentage--second-player {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    height: 30px;
+    width: 48.8%;
+    background-color: #ab2940;
+    -webkit-clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0% 100%);
+    clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0% 100%);
+}
+
+.second-player--cote {
+    position: absolute;
+    top: 55%;
+    right: 40px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+}
+
+/***************
+
+     CHATBOX
+
+***************/
+
+#chatbox {
+    position: fixed;
+    top: 0;
+    margin-left: 70%;
+    width: 30%;
+    height: 100vh;
+    background-color: #fcfcfc;
+}
+
+.chatbox__title-block {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 30px;
+    border: solid 2px #ab2940;
+    text-align: center;
+    line-height: 30px;
+}
+
+.chatbox__title {
+    color: #ab2940;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.chatbox__form {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+}
+
+.chatbox__message {
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.chatbox__send {
+    text-align: center;
+}
+
+.chatbox__send input {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+table tr td {
+    border: 1px solid black;
 }
