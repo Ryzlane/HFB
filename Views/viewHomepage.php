@@ -5,13 +5,13 @@
 <?php ob_start(); ?>
 
     <section id="live-battles">
-        <div class="live-battles__title-bloc"><h1 class="live-battles__title">Live battle</h1></div>
+        <div class="live-battles__title-block"><h1 class="live-battles__title">Live battle</h1></div>
 
         <div class="live-battles__container">
-            <div class="live-battles__blocs">
+            <div class="live-battles__blocks">
 
                 <!-- 1 VS 1 -->
-                <div class="live-battles__bloc"  data-bloc="01">
+                <div class="live-battles__block"  data-block="01">
                     <!-- IMAGES -->
                     <div class="picture__effect"></div>
                     <div class="picture--top"><img src="Images/gamora.png" height="100%" alt=""></div>
@@ -30,7 +30,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="live-battles__bloc"  data-bloc="02">
+                <div class="live-battles__block"  data-block="02">
                     <!-- IMAGES -->
                     <div class="picture__effect"></div>
                     <div class="picture--top"><img src="Images/gamora.png" height="100%" alt=""></div>
@@ -49,7 +49,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="live-battles__bloc" data-bloc="03">
+                <div class="live-battles__block" data-block="03">
                     <!-- IMAGES -->
                     <div class="picture__effect"></div>
                     <div class="picture--top"><img src="Images/gamora.png" height="100%" alt=""></div>
@@ -70,7 +70,7 @@
                 </div>
 
                 <!-- 2 VS 2 -->
-                <div class="live-battles__bloc"  data-bloc="04">
+                <div class="live-battles__block"  data-block="04">
                     <!-- IMAGES -->
                     <div class="picture__effect--duo"></div>
                     <div class="pictures--top">
@@ -97,9 +97,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="live-battles__bloc"  data-bloc="05">
-                                        <!-- IMAGES -->
-                                        <div class="picture__effect--duo"></div>
+                <div class="live-battles__block"  data-block="05">
+                    <!-- IMAGES -->
+                    <div class="picture__effect--duo"></div>
                     <div class="pictures--top">
                         <img src="Images/gamora.png" class="pictures--top__first" width="100%" alt="">
                         <img src="Images/batman.png" class="pictures--top__second" width="100%" alt="">
@@ -129,10 +129,70 @@
     </section>
 
 
-    <section id="profile__container">
-        <div class="profile__title-bloc"><h1 class="profile__title">My profile</h1></div>
-        <div class="profile__bloc">
-            
+    <section id="myprofile">
+        <div class="myprofile__title-block"><h1 class="myprofile__title">My profile</h1></div>
+        <div class="myprofile__container">
+
+            <!-- PROFILE PART -->
+            <div class="profile__block">
+                <div class="profile__picture"><img src="" alt=""></div>
+                <div class="profile__coins">1 800 coins</div>
+                <div class="profile__name">Raphaël Guenassia</div>
+                <div class="profile_all-bets">
+                    <span class="bets">
+                        <span class="bets__total">35</span><br />
+                        <span class="bets__desc">Bets</span>
+                    </span>
+                    <span class="won-bets">
+                        <span class="won-bets__total">16</span><br />
+                        <span class="won-bets__desc">Won</span>
+                    </span>
+                </div>
+                <div class="rank">
+                        <span class="rank__desc">Rank</span><br />
+                        <span class="rank__actual">300</span>
+                </div>
+            </div>
+
+            <!-- LEADERBOARD PART -->
+            <div class="leaderboard-block">
+                <div class="leaderboard__title">Leaderboard</div>
+                <div class="leaderboard__won-bets">Won bets</div>
+                
+                <table class="leaderboard__table">
+                    <tr>
+                        <td class="leaderboard__table__number">1</td>
+                        <td class="leaderboard__table__picture"><div class="table__picture"><img src="" alt=""></div></td>
+                        <td class="leaderboard__table__name">Ryzlane Arsac-Gothière</td>
+                        <td class="leaderboard__table__won-bets">110</td>
+                    </tr>
+                    <tr>
+                        <td class="leaderboard__table__number">2</td>
+                        <td class="leaderboard__table__picture"><div class="table__picture"><img src="" alt=""></div></td>
+                        <td class="leaderboard__table__name">Ryzlane Arsac-Gothière</td>
+                        <td class="leaderboard__table__won-bets">110</td>
+                    </tr>
+                    <tr>
+                        <td class="leaderboard__table__number">3</td>
+                        <td class="leaderboard__table__picture"><div class="table__picture"><img src="" alt=""></div></td>
+                        <td class="leaderboard__table__name">Ryzlane Arsac-Gothière</td>
+                        <td class="leaderboard__table__won-bets">110</td>
+                    </tr>
+                    <tr>
+                        <td class="leaderboard__table__number">4</td>
+                        <td class="leaderboard__table__picture"><div class="table__picture"><img src="" alt=""></div></td>
+                        <td class="leaderboard__table__name">Ryzlane Arsac-Gothière</td>
+                        <td class="leaderboard__table__won-bets">110</td>
+                    </tr>
+                    <tr>
+                        <td class="leaderboard__table__number">5</td>
+                        <td class="leaderboard__table__picture"><div class="table__picture"><img src="" alt=""></div></td>
+                        <td class="leaderboard__table__name">Ryzlane Arsac-Gothière</td>
+                        <td class="leaderboard__table__won-bets">110</td>
+                    </tr>
+                </table>
+            </div>
+
         </div>
     </section>
 
