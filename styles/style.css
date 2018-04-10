@@ -1,4 +1,4 @@
-/* .test {
+.test {
     position: absolute;
     height: 1px;
     width: 1px;
@@ -7,7 +7,7 @@
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     z-index: 100;
-} */
+}
 
 /***************
 
@@ -62,7 +62,13 @@ header {
 
 ***************/
 
-/*** SECTION LIVE BATTLES ***/
+/***************
+
+  LIVE BATTLES
+
+***************/
+
+/*** TITLE ***/
 
 .live-battles__title-bloc {
     width: 130px;
@@ -70,13 +76,13 @@ header {
     margin-top: 25px;
     margin-left: 10px;
     margin-bottom: 25px;
-    background-color: #761d2d;
+    border: solid 2px #761d2d;
     text-align: center;
     line-height: 40px;
 }
 
 .live-battles__title {
-    color: #ffffff;
+    color: #761d2d;
     font-size: 14px;
     font-weight: bold;
 }
@@ -108,6 +114,10 @@ header {
 .live-battles__bloc[data-bloc="01"], .live-battles__bloc[data-bloc="02"], .live-battles__bloc[data-bloc="03"], .live-battles__bloc[data-bloc="04"] {
     margin-right: 12px;
 }
+
+/*** LIVE BATTLES 1 V 1 ***/
+
+/* IMAGES */
 
 .live-battles__bloc .picture--bottom {
     position: absolute;
@@ -147,4 +157,248 @@ header {
     transform: translateX(-50%) translateY(-50%) rotate(30.5deg);
     transform-origin: 50% 50%;
     z-index: 2;
+}
+
+/* TEXT */
+
+.text-container {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.live-battles__name-rating--top {
+    z-index: 100;
+    margin-left: 10px;
+    margin-top: 25px;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.name-rating__rating--top {
+    background-color: #384259;
+    width: 60px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    margin-top: 10px;
+}
+
+.live-battles__name-rating--bottom {
+    position: absolute;
+    z-index: 100;
+    right: 10px;
+    bottom: 25px;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: right;
+}
+
+.name-rating__rating--bottom {
+    background-color: #64231f;
+    width: 60px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    margin-top: 10px;
+}
+
+.text-container__timer {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'IBM Plex Mono';
+    font-weight: 700;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+/*** LIVE BATTLES 2 V 2 ***/
+
+/* IMAGES */
+
+.pictures--top {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 39%, 0 62%);
+    clip-path: polygon(0 0, 100% 0%, 100% 39%, 0 62%);
+}
+
+.pictures--top__first {
+    position: absolute;
+    top: 0;
+    right: 50%;
+}
+
+.pictures--top__second {
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.live-battles__diagonal--duo {
+    position: absolute;
+    background-color: #ffffff;
+    width: 2px;
+    height: 200%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) rotate(69deg);
+    transform-origin: 50% 50%;
+    z-index: 2;
+}
+
+.pictures--top {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 39%, 0 61%);
+    clip-path: polygon(0 0, 100% 0%, 100% 39%, 0 61%);
+}
+
+.pictures--top__first {
+    position: absolute;
+    top: 0;
+    right: 50%;
+}
+
+.pictures--top__second {
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.pictures--bottom {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 39%, 0 61%);
+    clip-path: polygon(0 100%, 100% 100%, 100% 39%, 0 61%);
+}
+
+.pictures--bottom__first {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+}
+
+.pictures--bottom__second {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+}
+
+.live-battles__bloc .picture__effect--duo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 1;
+    background: linear-gradient(184deg, #384259, #761d2d);;
+    opacity: 0.38;
+}
+
+/* TEXTS */
+
+.live-battles__names-rating--top--duo {
+    z-index: 100;
+    margin-left: 10px;
+    margin-top: 25px;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.name-rating__names--top--duo02 {
+    position: absolute;
+    right: 10px;
+    top: 25px;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: right;
+}
+
+.name-rating__rating--top--duo {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #384259;
+    width: 60px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.live-battles__names-rating--bottom--duo {
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    bottom: 25px;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: right;
+}
+
+.name-rating__rating--bottom--duo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    background-color: #64231f;
+    width: 60px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.name-rating__names--bottom--duo01 {
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+}
+
+.name-rating__names--bottom--duo02 {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+}
+
+/***************
+
+    PROFILE
+
+***************/
+
+.profile__title-bloc {
+    width: 130px;
+    height: 40px;
+    margin-top: 75px;
+    margin-left: 10px;
+    margin-bottom: -25px;
+    border: solid 2px #761d2d;
+    text-align: center;
+    line-height: 40px;
+}
+
+.profile__title {
+    color: #761d2d;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.profile__bloc {
+    -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 1%, 0 8%);
+    clip-path: polygon(0 100%, 100% 100%, 100% 1%, 0 8%);
+    background-color: #384259;
+    height: 700px;
 }
