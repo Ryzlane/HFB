@@ -13,7 +13,12 @@ require './Modele/modele.php';
         // fetchs, ...
     };
 
-    function LogPage() {
-        require './Views/Logpage.php';
+    function SignInPage() {
+        require './Views/viewSignInpage.php';
+        // fetchs, ...
+    };
+
+    function SignUpPage() {
+        require './Views/viewSignUppage.php';
         // fetchs, ...
     };

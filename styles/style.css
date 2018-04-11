@@ -17,7 +17,8 @@
 
 @font-face {
 	font-family: 'Gotham';
-	src: url('../Fonts/Gotham-Medium.otf');
+    src: url('../Fonts/Gotham-Medium.otf');
+    font-weight: normal;
 }
 
 @font-face {
@@ -64,7 +65,45 @@ header {
 
 /***************
 
-     ACCUEIL
+     FOOTER
+
+***************/
+
+footer {
+    position: relative;
+    background-color: #384259;
+    height: 150px;
+    width: 100%;
+}
+
+.footer__copyright {
+    position: absolute;
+    bottom: 0;
+    background-color: #1d1D1D;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.footer__law {
+    color: #ffffff;
+    font-size: 0.8em;
+    width: 40%;
+    margin-left: 20%;
+    padding-top: 15px;
+    text-align: justify;
+    line-height: 18px;
+}
+
+.footer__copyright p {
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+
+/***************
+
+      HOME
 
 ***************/
 
@@ -175,6 +214,7 @@ header {
     width: 100%;
     height: 100%;
     transform: translateX(-50%) translateY(-50%);
+    font-weight: bold;
 }
 
 .live-battles__name-rating--top {
@@ -703,6 +743,7 @@ header {
 #game-interface {
     margin-top: 375px;
     margin-left: 100px;
+    margin-bottom: 100px;
     width: calc(70% - 100px);
 }
 
@@ -727,6 +768,7 @@ header {
     width: calc(100% - 100px);
     height: 35px;
     background-color: #e1e1e1;
+    margin-bottom: 50px;
 }
 
 .percentage--first-player {
@@ -773,6 +815,40 @@ header {
     font-weight: bold;
 }
 
+.bet-interface {
+    font-size: 14px;
+    color: #9c9c9c;
+}
+
+.bet-interface tr td {
+    padding-top: 30px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.bet-interface tr td input {
+    font-weight: bold;
+}
+
+.bet-interface__amount, .bet-interface__potential {
+    width: 300px;
+    border-bottom: solid 3px #9c9c9c;
+}
+
+.bet-interface__odd, .bet-interface__confirm {
+    text-align: center;
+    padding-left: 20px;
+}
+
+.bet-interface__confirm input {
+    color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #9c9c9c;
+}
+
 /***************
 
      CHATBOX
@@ -780,7 +856,7 @@ header {
 ***************/
 
 #chatbox {
-    position: fixed;
+    position: absolute;
     top: 0;
     margin-left: 70%;
     width: 30%;
@@ -813,14 +889,20 @@ header {
     width: 100%;
 }
 
+.chatbox__form tr { 
+    border-top: 1px solid #9c9c9c;
+}
+
 .chatbox__message {
     padding: 10px;
     height: 100%;
     width: 100%;
+    border-right: 1px solid #9c9c9c;
 }
 
-.chatbox__send {
+.chatbox__submit {
     text-align: center;
+    color: #9c9c9c;
 }
 
 .chatbox__send input {
@@ -828,6 +910,80 @@ header {
     font-weight: bold;
 }
 
-table tr td {
-    border: 1px solid black;
+/***************
+
+     LOG IN
+
+***************/
+
+#sign-in {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 210px);
+}
+
+.sign__box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 600px;
+    height: 420px;
+    background: #ebebeb;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sign__title-block {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 30px;
+    border: solid 2px #ab2940;
+    text-align: center;
+    line-height: 30px;
+}
+
+.sign__title {
+    color: #ab2940;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.sign__form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 14px;
+    color: #9c9c9c;
+}
+
+.sign__form tr td {
+    padding-top: 30px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.sign__email, .sign__username, .sign__password {
+    border-bottom: 3px solid #9c9c9c;
+}
+
+.sign__confirm, .sign__or {
+    text-align: center;
+}
+
+.sign__form tr td input {
+    font-weight: bold;
+}
+
+.sign__confirm input {
+    color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #ab2940;
+    cursor: pointer;
 }

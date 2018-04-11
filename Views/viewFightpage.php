@@ -31,21 +31,35 @@
             <p class="player__desc">Occupation: businessman<br />Race: human</p>
         </div>
     </section>
+
     <section id="game-interface">
         <div class="game-interface__title-block"><h1 class="game-interface__title">Chances of victory</h1></div>
         <div class="game-interface__all-percentage">
             <div class="percentage--first-player"><span class="first-player--cote">02,20</span></div>
             <div class="percentage--second-player"><span class="second-player--cote">01,23</span></div>
         </div>
+        <form action="" method="">
+            <table class="bet-interface">
+                <tr>
+                    <td class="bet-interface__amount"><input type="text" value="Amount" disabled="disabled" placeholder="Amount to bet"></td>
+                    <td class="bet-interface__odd"><p>Odd</p></td>
+                </tr>
+                <tr>
+                    <td class="bet-interface__potential"><input type="text" value="Potential" disabled="disabled" placeholder="Amount to bet"></td>
+                    <td class="bet-interface__confirm"><input type="submit" value="Confirm"></td>
+                </tr>
+            </table>
+        </form>
     </section>
 
 
+    <!-- CHATBOX -->
     <section id="chatbox">
         <div class="chatbox__title-block"><h1 class="chatbox__title">Chatbox</h1></div>
             <table class="chatbox__form">
                 <tr>
                     <td ><input class="chatbox__message" placeholder="Type a message..." type="textarea"></td>
-                    <td class="chatbox__send"><input type="submit"></td>
+                    <td class="chatbox__submit"><input type="submit" value="Submit"></td>
                 </tr>
             </table>
     </section>
