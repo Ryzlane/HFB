@@ -33,10 +33,10 @@ require './Controls/connectAccount.php';
                     </tr>
                 </table>
                 <?php foreach($errorMessagesLogin as $message): ?>
-                <p><?= $message ?></p>
+                <p class="sign__errors"><?= $message ?></p>
                 <?php endforeach ?>
                 <?php foreach($successMessagesLogin as $message): ?>
-                <p><?= $message ?></p>
+                <p class="sign__success"><?= $message ?></p>
                 <?php endforeach ?>
             </form>
         </div>

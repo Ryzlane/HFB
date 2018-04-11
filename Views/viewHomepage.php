@@ -24,9 +24,9 @@
                             <h3 class="name-rating__name--top">GAMORA</h3>
                             <div class="name-rating__rating--top"><h4>2,20</h4></div>
                         </div>
-                        <div class="live-battles__name-rating--bottom">
-                            <h3 class="name-rating__name--bottom">BATMAN</h3>
+                        <div class="live-battles__name-rating--bottom">                            
                             <div class="name-rating__rating--bottom"><h4>1,23</h4></div>
+                            <h3 class="name-rating__name--bottom">BATMAN</h3>
                         </div>
                     </div>
                 </div>
@@ -43,9 +43,9 @@
                             <h3 class="name-rating__name--top">GAMORA</h3>
                             <div class="name-rating__rating--top"><h4>2,20</h4></div>
                         </div>
-                        <div class="live-battles__name-rating--bottom">
-                            <h3 class="name-rating__name--bottom">BATMAN</h3>
+                        <div class="live-battles__name-rating--bottom">                            
                             <div class="name-rating__rating--bottom"><h4>1,23</h4></div>
+                            <h3 class="name-rating__name--bottom">BATMAN</h3>
                         </div>
                     </div>
                 </div>
@@ -62,9 +62,9 @@
                             <h3 class="name-rating__name--top">GAMORA</h3>
                             <div class="name-rating__rating--top"><h4>2,20</h4></div>
                         </div>
-                        <div class="live-battles__name-rating--bottom">
-                            <h3 class="name-rating__name--bottom">BATMAN</h3>
+                        <div class="live-battles__name-rating--bottom">                            
                             <div class="name-rating__rating--bottom"><h4>1,23</h4></div>
+                            <h3 class="name-rating__name--bottom">BATMAN</h3>
                         </div>
                     </div>
                 </div>
@@ -86,14 +86,12 @@
                     <div class="text-container">
                         <div class="text-container__timer"><p>00:39</p></div>
                         <div class="live-battles__names-rating--top--duo">
-                            <h3 class="name-rating__names--top--duo01">GAMORA</h3>
-                            <h3 class="name-rating__names--top--duo02">BATMAN</h3>
-                            <h4 class="name-rating__rating--top--duo">01,55</h4>
+                            <h3 class="name-rating__names--top--duo01">GAMORA / BATMAN</h3>
+                            <h4 class="name-rating__rating--top--duo">1,55</h4>
                         </div>
                         <div class="live-battles__names-rating--bottom--duo">
-                            <h3 class="name-rating__names--bottom--duo01">GAMORA</h3>
-                            <h3 class="name-rating__names--bottom--duo02">BATMAN</h3>
-                            <h4 class="name-rating__rating--bottom--duo">01,55</h4>
+                            <h3 class="name-rating__names--bottom--duo01">GAMORA / BATMAN</h3>
+                            <h4 class="name-rating__rating--bottom--duo">1,55</h4>
                         </div>
                     </div>
                 </div>
@@ -113,14 +111,12 @@
                     <div class="text-container">
                         <div class="text-container__timer"><p>00:39</p></div>
                         <div class="live-battles__names-rating--top--duo">
-                            <h3 class="name-rating__names--top--duo01">GAMORA</h3>
-                            <h3 class="name-rating__names--top--duo02">BATMAN</h3>
-                            <h4 class="name-rating__rating--top--duo">01,55</h4>
+                            <h3 class="name-rating__names--top--duo01">GAMORA / BATMAN</h3>
+                            <h4 class="name-rating__rating--top--duo">1,55</h4>
                         </div>
                         <div class="live-battles__names-rating--bottom--duo">
-                            <h3 class="name-rating__names--bottom--duo01">GAMORA</h3>
-                            <h3 class="name-rating__names--bottom--duo02">BATMAN</h3>
-                            <h4 class="name-rating__rating--bottom--duo">01,55</h4>
+                            <h3 class="name-rating__names--bottom--duo01">GAMORA / BATMAN</h3>
+                            <h4 class="name-rating__rating--bottom--duo">1,55</h4>
                         </div>
                     </div>
                 </div>

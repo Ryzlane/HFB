@@ -54,6 +54,8 @@ header {
     z-index: 1;
 }
 
+/*** NOT SIGN ***/
+
 .header__sign {
     margin-right: 50px;
     font-weight: bold;
@@ -62,6 +64,33 @@ header {
 .sign__sign-in {
     margin-left: 20px;
 }
+
+/*** SIGNED ***/
+
+.header__connected {
+    position: absolute;
+    right: 50px;
+}
+
+.header__connected p {
+    font-weight: bold;
+}
+
+.connected__coins {
+    color: #ab2940;
+    padding-right: 50px;
+}
+
+.connected__username {
+    padding-right: 30px;
+}
+
+.connected__sign-out {
+    cursor: pointer;
+}
+
+
+
 
 /***************
 
@@ -219,38 +248,64 @@ footer {
 
 .live-battles__name-rating--top {
     z-index: 100;
-    margin-left: 10px;
     margin-top: 25px;
-    color: #ffffff;
+    color: #000000;
     font-size: 16px;
+    text-align: center;
+}
+
+.name-rating__name--top {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    line-height: 25px;
+    height: 25px;
+    width: 100px;
 }
 
 .name-rating__rating--top {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: #4d669f;
+    color: #ffffff;
     width: 60px;
     height: 25px;
     text-align: center;
     line-height: 25px;
-    margin-top: 10px;
+    margin-top: 25px;
 }
 
 .live-battles__name-rating--bottom {
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 100;
-    right: 10px;
     bottom: 25px;
-    color: #ffffff;
+    color: #000000;
     font-size: 16px;
-    text-align: right;
+    text-align: center;
+}
+
+.name-rating__name--bottom {
+    background-color: #ffffff;
+    line-height: 25px;
+    height: 25px;
+    width: 100px;
 }
 
 .name-rating__rating--bottom {
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    transform: translateX(-50%);
     background-color: #ab2940;
+    color: #ffffff;
     width: 60px;
     height: 25px;
     text-align: center;
     line-height: 25px;
-    margin-top: 10px;
 }
 
 .text-container__timer {
@@ -357,28 +412,28 @@ footer {
 /* TEXTS */
 
 .live-battles__names-rating--top--duo {
-    z-index: 100;
-    margin-left: 10px;
-    margin-top: 25px;
-    color: #ffffff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 16px;
+    top: 25px;
+    background-color: #ffffff;
 }
 
-.name-rating__names--top--duo02 {
-    position: absolute;
-    right: 10px;
-    top: 25px;
-    color: #ffffff;
-    font-size: 16px;
-    text-align: right;
+.name-rating__names--top--duo01 {
+    line-height: 25px;
+    height: 25px;
+    width: 200px;
+    text-align: center;
 }
 
 .name-rating__rating--top--duo {
     position: absolute;
-    top: 20px;
+    top: 25px;
     left: 50%;
     transform: translateX(-50%);
     background-color: #4d669f;
+    color: #ffffff;
     width: 60px;
     height: 25px;
     text-align: center;
@@ -387,20 +442,26 @@ footer {
 
 .live-battles__names-rating--bottom--duo {
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
     width: 100%;
     z-index: 100;
     bottom: 25px;
     color: #ffffff;
     font-size: 16px;
     text-align: right;
+    background-color: #ffffff;
+    width: 200px;
 }
 
 .name-rating__rating--bottom--duo {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: -5px;
+    bottom: 25px;
     background-color: #ab2940;
+    color: #ffffff;
     width: 60px;
     height: 25px;
     text-align: center;
@@ -408,14 +469,11 @@ footer {
 }
 
 .name-rating__names--bottom--duo01 {
-    position: absolute;
-    left: 10px;
-    bottom: 0;
-}
-
-.name-rating__names--bottom--duo02 {
-    position: absolute;
-    right: 10px;
+    line-height: 25px;
+    height: 25px;
+    width: 200px;
+    text-align: center;
+    color: black;
     bottom: 0;
 }
 
@@ -986,4 +1044,28 @@ footer {
     padding-right: 20px;
     background-color: #ab2940;
     cursor: pointer;
+}
+
+.sign__errors {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: #ab2940 1px solid;
+    color: #ffffff;
+    width: 60%;
+    padding: 10px;
+    background-color: hsla(349, 61%, 42%, 0.651);
+    bottom: 20px;
+}
+
+.sign__success {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: #1d861a 1px solid;
+    color: #ffffff;
+    width: 60%;
+    padding: 10px;
+    background-color: hsla(118, 68%, 31%, 0.651);
+    bottom: 20px;
 }

@@ -10,15 +10,28 @@ It contains content common to all pages. -->
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,700|Montserrat:400,700" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
     <title><?= $title; ?></title>
 </head>
 <body>
     <header>
         <!-- <img src="#" alt="logo"> -->
+        <?php if(!isset($_SESSION['pseudo'])):?>
         <span class="header__sign">
-            <a href="#" class="sign__sign-up">Sign up</a>
-            <a href="#" class="sign__sign-in">Sign in</a>
+            <a href="./?action=signup" class="sign__sign-up">Sign up</a>
+            <a href="./?action=signin" class="sign__sign-in">Sign in</a>
         </span>
+    <?php endif;?>
+    <?php if(isset($_SESSION['pseudo'])):?>
+        <table class="header__connected">
+            <tr>
+                <td> <p class="connected__coins">1 800 coins</p></td>
+                <td><div class="connected__picture"></div></td>
+                <td><p class="connected__username">Burno</p></td>
+                <td><a class="connected___sign-out"><i class="fas fa-power-off"></i></a></td>
+            </tr>
+        </table>
+    <?php endif;?>
     </header>
     
     <?= $content; ?>

@@ -35,10 +35,10 @@ require './Controls/createAccount.php';
                     </tr>
                 </table>
                 <?php foreach($errorMessagesCreate as $message): ?>
-                <p><?= $message ?></p>
+                <p class="sign__errors"><?= $message ?></p>
                 <?php endforeach ?>
                 <?php foreach($successMessagesCreate as $message): ?>
-                <p><?= $message ?></p>
+                <p class="sign__success"><?= $message ?></p>
                 <?php endforeach ?>
             </form>
         </div>
