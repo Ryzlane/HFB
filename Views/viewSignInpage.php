@@ -1,5 +1,12 @@
-<?php $title = 'HFB | Sign in'; ?>
+<?php $title = 'HFB | Sign in'; 
 
+$errorMessagesLogin = [];
+$successMessagesLogin = [];
+$logstate = [];
+
+require './Controls/connectAccount.php';
+
+?>
 
 <!-- Temporarily buffered (create the function content next) -->
 <?php ob_start(); ?>
@@ -7,7 +14,7 @@
     <section id=sign-in>
         <div class="sign__box">
             <div class="sign__title-block"><div class="sign__title">Sign in</div></div>
-            <form action="" method="">
+            <form action="#" method="post">
                 <table class="sign__form">
                     <tr>
                         <td class="sign__email"><input type="text" name="email" placeholder="Email"></td>
@@ -16,15 +23,21 @@
                         <td class="sign__or"><p>Or</p></td>
                     </tr>
                     <tr class="sign__username">
-                        <td><input type="text" name="username" placeholder="Username"></td>
+                        <td><input type="text" name="pseudo" placeholder="Username"></td>
                     </tr>
                     <tr class="sign__password">
-                        <td><input type="password" name="paswword" placeholder="password"></td>
+                        <td><input type="password" name="password" placeholder="password"></td>
                     </tr>
                     <tr>
-                        <td class="sign__confirm"><input type="submit" value="Sign in"></td>
+                        <td class="sign__confirm"><input type="submit" name="submit" value="Sign in"></td>
                     </tr>
                 </table>
+                <?php foreach($errorMessagesLogin as $message): ?>
+                <p><?= $message ?></p>
+                <?php endforeach ?>
+                <?php foreach($successMessagesLogin as $message): ?>
+                <p><?= $message ?></p>
+                <?php endforeach ?>
             </form>
         </div>
     </section>

@@ -1,6 +1,6 @@
 <?php
 
-require './Modele/modele.php';
+require_once './Modele/modele.php';
 
 // Functions that group fetchs and view
     function HomePage() {

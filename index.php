@@ -1,14 +1,15 @@
 <?php
 
-require('Modele/modele.php');
 require('Controls/controls.php');
 
-if (isset($_GET['action']) && ($_GET['action'] == 'Fightpage')) {
+session_start();
+
+if (isset($_GET['action']) && ($_GET['action'] == 'fightpage')) {
     FightPage();
-} elseif (isset($_GET['action']) && ($_GET['action'] == 'Signin')) {
+} elseif (isset($_GET['action']) && ($_GET['action'] == 'signin')) {
     SignInPage();
-} elseif (isset($_GET['action']) && ($_GET['action'] == 'SignUp')) {
-    HomePage();
+} elseif (isset($_GET['action']) && ($_GET['action'] == 'signup')) {
+    SignUpPage();
 } else {
-      SignUpPage();  // by default
+    HomePage();  // by default
   }
