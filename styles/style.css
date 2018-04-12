@@ -411,12 +411,16 @@ footer {
     position: absolute;
     top: 0;
     right: 50%;
+    height: 65%;
+    width: 65%;
 }
 
 .pictures--top__second {
     position: absolute;
     top: 0;
     left: 50%;
+    height: 65%;
+    width: 65%;
 }
 
 .pictures--bottom {
@@ -432,12 +436,16 @@ footer {
     position: absolute;
     bottom: 0;
     right: 50%;
+    height: 65%;
+    width: 65%;
 }
 
 .pictures--bottom__second {
     position: absolute;
     bottom: 0;
     left: 50%;
+    height: 65%;
+    width: 65%;
 }
 
 /* TEXTS */
