@@ -13,7 +13,7 @@
                 <!-- 1 VS 1 -->
                 <a href="./?action=fightpage"><div class="live-battles__block"  data-block="01">
                     <!-- IMAGES -->
-                    <div class="picture__effect js-effect"></div>
+                    <div class="picture__effect"><div class="js-effect"></div></div>
                     <div class="picture--top"><img src="Images/gamora.png" height="100%" alt=""></div>
                     <div class="picture--bottom"><img src="Images/batman.png" height="100%" alt=""></div>
                     <div class="live-battles__diagonal"></div>
@@ -32,7 +32,7 @@
                 </div></a>
                 <a href="./?action=fightpage"><div class="live-battles__block"  data-block="02">
                     <!-- IMAGES -->
-                    <div class="picture__effect js-effect"></div>
+                    <div class="picture__effect"><div class="js-effect"></div></div>
                     <div class="picture--top"><img src="Images/gamora.png" height="100%" alt=""></div>
                     <div class="picture--bottom"><img src="Images/batman.png" height="100%" alt=""></div>
                     <div class="live-battles__diagonal"></div>
@@ -51,7 +51,7 @@
                 </div></a>
                 <a href="./?action=fightpage"><div class="live-battles__block" data-block="03">
                     <!-- IMAGES -->
-                    <div class="picture__effect js-effect"></div>
+                    <div class="picture__effect"><div class="js-effect"></div></div>
                     <div class="picture--top"><img src="Images/gamora.png" height="100%" alt=""></div>
                     <div class="picture--bottom"><img src="Images/batman.png" height="100%" alt=""></div>
                     <div class="live-battles__diagonal"></div>
@@ -72,7 +72,7 @@
                 <!-- 2 VS 2 -->
                 <a href="./?action=fightpage2vs2"><div class="live-battles__block"  data-block="04">
                     <!-- IMAGES -->
-                    <div class="picture__effect--duo js-effect"></div>
+                    <div class="picture__effect--duo"><div class="js-effect"></div></div>
                     <div class="pictures--top">
                         <img src="Images/gamora.png" class="pictures--top__first" width="100%" alt="">
                         <img src="Images/batman.png" class="pictures--top__second" width="100%" alt="">
@@ -97,7 +97,7 @@
                 </div></a>
                 <a href="./?action=fightpage2vs2"><div class="live-battles__block"  data-block="05">
                     <!-- IMAGES -->
-                    <div class="picture__effect--duo js-effect"></div>
+                    <div class="picture__effect--duo"><div class="js-effect"></div></div>
                     <div class="pictures--top">
                         <img src="Images/gamora.png" class="pictures--top__first" width="100%" alt="">
                         <img src="Images/batman.png" class="pictures--top__second" width="100%" alt="">

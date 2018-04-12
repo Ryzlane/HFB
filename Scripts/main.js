@@ -1,6 +1,5 @@
 const blocksHome = document.querySelectorAll (".live-battles__block");
 
-console.log(blocksHome)
 
 for(let i = 0; i < blocksHome.length; i++) {
     blocksHome[i].addEventListener("mouseover", () => {
