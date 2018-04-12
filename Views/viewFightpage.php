@@ -5,16 +5,16 @@
 <?php ob_start(); ?>
 
     <section id="fight">
-        <div class="bg-video"><video playsinline autoplay muted loop><source src="Images/background.mp4" type="video/mp4"></video></div>
+        <div class="bg-video"><video playsinline autoplay muted loop><source src="images/background.mp4" type="video/mp4"></video></div>
         
         <span class="fight__timer">01:03</span>
         <!-- FIRST PLAYER -->
         <div class="fight__first-player">
-            <h1 class="player__name">GAMORA</h1>
+            <h3 class="player__name">GAMORA</h3>
             <div class="first-player__container">
                 <div class="first-player__frame"></div>
                 <div class="first-player--color"></div>
-                <img src="Images/gamora.png" width="100%" alt="">
+                <img src="images/gamora.png" style="width:100%;" alt="First fighter">
             </div>
             <span class="bet--first-player"><a href="#">Bet</a></span>
             <p class="player__desc">Occupation: assassin<br />Race: Zen-Whoberian</p>
@@ -24,10 +24,10 @@
         </div>
         <!-- SECOND PLAYER -->
         <div class="fight__second-player">
-            <h1 class="player__name">BATMAN</h1>
+            <h3 class="player__name">BATMAN</h3>
             <div class="second-player__container">
                 <div class="second-player--color"></div>
-                <img src="Images/batman.png" width="100%" alt="">
+                <img src="images/batman.png" style="width:100%;" alt="Second fighter">
             </div>
             <span class="bet--second-player"><a href="#">Bet</a></span>
             <p class="player__desc">Occupation: businessman<br />Race: human</p>
@@ -38,7 +38,7 @@
     </section>
 
     <section id="game-interface">
-        <div class="game-interface__title-block"><h1 class="game-interface__title">Chances of victory</h1></div>
+        <div class="game-interface__title-block"><h2 class="game-interface__title">Chances of victory</h2></div>
         <div class="game-interface__all-percentage">
             <div class="percentage--first-player"><span class="first-player--cote">02,20</span></div>
             <div class="percentage--second-player"><span class="second-player--cote">01,23</span></div>
@@ -60,7 +60,7 @@
 
     <!-- CHATBOX -->
     <section id="chatbox">
-        <div class="chatbox__title-block"><h1 class="chatbox__title">Chatbox</h1></div>
+        <div class="chatbox__title-block"><h2 class="chatbox__title">Chatbox</h2></div>
             <table class="chatbox__form">
                 <tr>
                     <td ><input class="chatbox__message" placeholder="Type a message..." type="textarea"></td>

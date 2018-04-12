@@ -33,9 +33,7 @@ if (!frame.classList.contains(".js-selected")) {
      })
     frame.addEventListener("mouseout", () => {
         frame.classList.remove("js-selection") 
-     })
-} else if {
-    
+     }) 
 }
 
 console.log(frame.classList.contains(".js-selected"))

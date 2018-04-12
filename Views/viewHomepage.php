@@ -5,7 +5,7 @@
 <?php ob_start(); ?>
 
     <section id="live-battles">
-        <div class="live-battles__title-block"><h1 class="live-battles__title">Live battles</h1></div>
+        <div class="live-battles__title-block"><h2 class="live-battles__title">Live battles</h2></div>
 
         <div class="live-battles__container">
             <div class="live-battles__blocks">
@@ -14,8 +14,8 @@
                 <a href="./?action=fightpage"><div class="live-battles__block"  data-block="01">
                     <!-- IMAGES -->
                     <div class="picture__effect"><div class="js-effect"></div></div>
-                    <div class="picture--top"><img src="Images/gamora.png" height="100%" alt=""></div>
-                    <div class="picture--bottom"><img src="Images/batman.png" height="100%" alt=""></div>
+                    <div class="picture--top"><img src="images/gamora.png" style="height:100%;" alt="First player"></div>
+                    <div class="picture--bottom"><img src="images/batman.png" style="height:100%;" alt="Second player"></div>
                     <div class="live-battles__diagonal"></div>
                     <!-- TEXTS -->
                     <div class="text-container">
@@ -33,8 +33,8 @@
                 <a href="./?action=fightpage"><div class="live-battles__block"  data-block="02">
                     <!-- IMAGES -->
                     <div class="picture__effect"><div class="js-effect"></div></div>
-                    <div class="picture--top"><img src="Images/gamora.png" height="100%" alt=""></div>
-                    <div class="picture--bottom"><img src="Images/batman.png" height="100%" alt=""></div>
+                    <div class="picture--top"><img src="images/gamora.png" style="height:100%;" alt="First player"></div>
+                    <div class="picture--bottom"><img src="images/batman.png" style="height:100%;" alt="Second player"></div>
                     <div class="live-battles__diagonal"></div>
                     <!-- TEXTS -->
                     <div class="text-container">
@@ -52,8 +52,8 @@
                 <a href="./?action=fightpage"><div class="live-battles__block" data-block="03">
                     <!-- IMAGES -->
                     <div class="picture__effect"><div class="js-effect"></div></div>
-                    <div class="picture--top"><img src="Images/gamora.png" height="100%" alt=""></div>
-                    <div class="picture--bottom"><img src="Images/batman.png" height="100%" alt=""></div>
+                    <div class="picture--top"><img src="images/gamora.png" style="height:100%;" alt="First player"></div>
+                    <div class="picture--bottom"><img src="images/batman.png" style="height:100%;" alt="Second player"></div>
                     <div class="live-battles__diagonal"></div>
                     <!-- TEXTS -->
                     <div class="text-container">
@@ -74,12 +74,12 @@
                     <!-- IMAGES -->
                     <div class="picture__effect--duo"><div class="js-effect"></div></div>
                     <div class="pictures--top">
-                        <img src="Images/gamora.png" class="pictures--top__first" width="100%" alt="">
-                        <img src="Images/batman.png" class="pictures--top__second" width="100%" alt="">
+                        <img src="images/gamora.png" class="pictures--top__first" style="width: 100%;" alt="First player of the first team">
+                        <img src="images/batman.png" class="pictures--top__second" style="width: 100%;" alt="Second player of the first team">
                     </div>
                     <div class="pictures--bottom">
-                        <img src="Images/gamora.png" class="pictures--bottom__first" width="100%" alt="">
-                        <img src="Images/batman.png" class="pictures--bottom__second" width="100%" alt="">
+                        <img src="images/gamora.png" class="pictures--bottom__first" style="width: 100%;" alt="First player of the second team">
+                        <img src="images/batman.png" class="pictures--bottom__second" style="width: 100%;" alt="Second player of the second team">
                     </div>
                     <div class="live-battles__diagonal--duo"></div>
                     <!-- TEXTS -->
@@ -99,12 +99,12 @@
                     <!-- IMAGES -->
                     <div class="picture__effect--duo"><div class="js-effect"></div></div>
                     <div class="pictures--top">
-                        <img src="Images/gamora.png" class="pictures--top__first" width="100%" alt="">
-                        <img src="Images/batman.png" class="pictures--top__second" width="100%" alt="">
+                        <img src="images/gamora.png" class="pictures--top__first" style="width: 100%;" alt="">
+                        <img src="images/batman.png" class="pictures--top__second" style="width: 100%;" alt="">
                     </div>
                     <div class="pictures--bottom">
-                        <img src="Images/gamora.png" class="pictures--bottom__first" width="100%" alt="">
-                        <img src="Images/batman.png" class="pictures--bottom__second" width="100%" alt="">
+                        <img src="images/gamora.png" class="pictures--bottom__first" style="width: 100%;" alt="">
+                        <img src="images/batman.png" class="pictures--bottom__second" style="width: 100%;" alt="">
                     </div>
                     <div class="live-battles__diagonal--duo"></div>
                     <!-- TEXTS -->
@@ -126,7 +126,7 @@
 
 
     <section id="myprofile">
-        <div class="myprofile__title-block"><h1 class="myprofile__title">My profile</h1></div>
+        <div class="myprofile__title-block"><h2 class="myprofile__title">My profile</h2></div>
         <div class="myprofile__container">
 
             <!-- PROFILE PART -->
@@ -198,8 +198,8 @@
     </section>
 
     <section id="explanations">
-        <div class="explanations__title-block"><h1 class="explanations__title">Explanations</h1></div>
-        <div class="explanations__image"><img src="Images/explanations.png" width="100%" alt=""></div>
+        <div class="explanations__title-block"><h2 class="explanations__title">Explanations</h2></div>
+        <div class="explanations__image"><img src="images/explanations.png" style="width: 100%;" alt=""></div>
     </section>
 
 <?php $content = ob_get_clean(); ?>

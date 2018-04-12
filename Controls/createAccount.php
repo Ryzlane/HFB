@@ -68,5 +68,4 @@ $users = $query->fetchAll();
                 $_POST['email'] = '';
             }
         }
-        header("Location: ./signup");
     }
