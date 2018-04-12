@@ -1,14 +1,3 @@
-.test {
-    position: absolute;
-    height: 1px;
-    width: 1px;
-    background-color: red;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    z-index: 100;
-}
-
 /***************
 
     GENERAL
@@ -202,7 +191,10 @@ footer {
     cursor: pointer;
 }
 
-.live-battles__block[data-block="01"], .live-battles__block[data-block="02"], .live-battles__block[data-block="03"], .live-battles__block[data-block="04"] {
+.live-battles__block[data-block="01"], 
+.live-battles__block[data-block="02"], 
+.live-battles__block[data-block="03"], 
+.live-battles__block[data-block="04"] {
     margin-right: 12px;
 }
 
@@ -820,11 +812,6 @@ footer {
     height: 110%;
 }
 
-.js-selected {
-    width: 100%;
-    height: 100%; 
-}
-
 .js-selection {
     animation-name: selection;
     animation-duration: 1s;
@@ -907,6 +894,21 @@ footer {
     background-color: #656565;
     overflow: hidden;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.second-player__frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border: 10px solid #ab2940;
+    width: 110%;
+    height: 110%;
+}
+
+.js-selected {
+    width: 100%;
+    height: 100%; 
 }
 
 .second-player--color {

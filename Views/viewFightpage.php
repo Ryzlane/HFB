@@ -12,7 +12,7 @@
         <div class="fight__first-player">
             <h3 class="player__name">GAMORA</h3>
             <div class="first-player__container">
-                <div class="first-player__frame"></div>
+                <div class="first-player__frame js-frame"></div>
                 <div class="first-player--color"></div>
                 <img src="images/gamora.png" style="width:100%;" alt="First fighter">
             </div>
@@ -26,6 +26,7 @@
         <div class="fight__second-player">
             <h3 class="player__name">BATMAN</h3>
             <div class="second-player__container">
+                <div class="second-player__frame js-frame"></div>
                 <div class="second-player--color"></div>
                 <img src="images/batman.png" style="width:100%;" alt="Second fighter">
             </div>
@@ -60,42 +61,6 @@
 
     <!-- CHATBOX -->
     <section id="chatbox">
-        <div class="chatbox__title-block"><h2 class="chatbox__title">Chatbox</h2></div>
-        <script src="scripts/node_modules/socket.io-client/dist/socket.io.js"></script>
-        <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
-            <script>
-                const socket = io('https://majestic-apparel.glitch.me/');
-		// On demande le pseudo, on l'envoie au serveur et on l'affiche dans le titre
-		var pseudo = prompt('pseudo ?');
-		socket.emit('nouveau_client', pseudo);
-		document.title = pseudo + ' - ' + document.title;
-
-		// Quand on reçoit un message, on l'insère dans la page
-		socket.on('message', function (data) {
-			insereMessage(data.pseudo, data.message)
-		})
-
-		// Quand un nouveau client se connecte, on affiche l'information
-		socket.on('nouveau_client', function (pseudo) {
-			$('#zone_chat').prepend('<p><em>' + pseudo + '</em></p>');
-		})
-
-		// Lorsqu'on envoie le formulaire, on transmet le message et on l'affiche sur la page
-		$('#formulaire_chat').submit(function (e) {
-			e.preventDefault();
-      console.log('ola');
-			var message = $('#message').val();
-			socket.emit('message', message); // Transmet le message aux autres
-			insereMessage(pseudo, message); // Affiche le message aussi sur notre page
-			$('#message').val('').focus(); // Vide la zone de Chat et remet le focus dessus
-			return false; // Permet de bloquer l'envoi "classique" du formulaire
-		});
-
-		// Ajoute un message dans la page
-		function insereMessage(pseudo, message) {
-			$('#zone_chat').prepend('<p><strong>' + pseudo + '</strong> ' + message + '</p>');
-		}
-	</script>
             <table class="chatbox__form">
                 <tr>
                     <td ><input class="chatbox__message" placeholder="Type a message..." type="textarea"></td>

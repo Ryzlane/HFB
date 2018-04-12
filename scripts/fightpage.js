@@ -1,15 +1,22 @@
-const frame = document.querySelector(".first-player__frame");
+const frame = document.querySelectorAll(".js-frame");
 
-frame.addEventListener("click", () => {
-    frame.classList.add("js-selected") 
- })
-
-
-if (!frame.classList.contains(".js-selected")) {
-    frame.addEventListener("mouseover", () => {
-        frame.classList.add("js-selection") 
+for(let i = 0; i < frame.length; i++) {
+    frame[i].addEventListener("click", () => {
+        for(let j = 0; j < frame.length; j++) {
+            if(frame[j].classList.contains("js-selected")) {
+                frame[j].classList.remove("js-selected") 
+            }
+        }
+        frame[i].classList.add("js-selected") 
      })
-    frame.addEventListener("mouseout", () => {
-        frame.classList.remove("js-selection") 
-     }) 
+    
+    
+    if (!frame[i].classList.contains(".js-selected")) {
+        frame[i].addEventListener("mouseover", () => {
+            frame[i].classList.add("js-selection") 
+         })
+         frame[i].addEventListener("mouseout", () => {
+            frame[i].classList.remove("js-selection") 
+         }) 
+    }
 }
