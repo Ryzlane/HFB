@@ -812,10 +812,41 @@ footer {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.first-player__frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border: 10px solid #4d669f;
+    width: 110%;
+    height: 110%;
+}
+
+.js-selected {
+    width: 100%;
+    height: 100%; 
+}
+
+.js-selection {
+    animation-name: selection;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes selection {
+    from {
+        width: 110%;
+        height: 110%;
+    }
+    to {
+        width: 100%;
+        height: 100%;
+    }
+}
+
 .first-player--color {
-    width: 80%;
+    width: 100%;
     height: 10px;
-    margin-left: 10%;
     background-color: #4d669f;
 }
 
@@ -881,9 +912,8 @@ footer {
 }
 
 .second-player--color {
-    width: 80%;
+    width: 100%;
     height: 10px;
-    margin-left: 10%;
     background-color: #ab2940;
 }
 
@@ -978,9 +1008,8 @@ footer {
 }
 
 .first-player--color--02 {
-    width: 80%;
+    width: 100%;
     height: 5px;
-    margin-left: 10%;
     background-color: #4d669f;
 }
 
@@ -1018,9 +1047,8 @@ footer {
 }
 
 .second-player--color--02 {
-    width: 80%;
+    width: 100%;
     height: 5px;
-    margin-left: 10%;
     background-color: #ab2940;
 }
 

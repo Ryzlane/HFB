@@ -12,6 +12,7 @@
         <div class="fight__first-player">
             <h1 class="player__name">GAMORA</h1>
             <div class="first-player__container">
+                <div class="first-player__frame"></div>
                 <div class="first-player--color"></div>
                 <img src="Images/gamora.png" width="100%" alt="">
             </div>

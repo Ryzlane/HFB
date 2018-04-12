@@ -6,7 +6,7 @@ A school project about super heroes
 * CSS3
 * Javascript
 * PHP
-* Node.js
+* SQL
 
 # API
 
