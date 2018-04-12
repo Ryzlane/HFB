@@ -33,7 +33,7 @@ $users = $query->fetchAll();
                 <a href="./?action=fightpage"><div class="live-battles__block"  data-block="01">
                     <!-- IMAGES -->
                     <div class="picture__effect"><div class="js-effect"></div></div>
-                    <div class="picture--top"><img src="images/gamora.png" style="height:100%;" alt="First player"></div>
+                    <div class="picture--top"><img src="images/gamora.png" style="height:100%;" style="width:100%;" alt="First player"></div>
                     <div class="picture--bottom"><img src="images/batman.png" style="height:100%;" alt="Second player"></div>
                     <div class="live-battles__diagonal"></div>
                     <!-- TEXTS -->
@@ -52,7 +52,7 @@ $users = $query->fetchAll();
                 <a href="./?action=fightpage"><div class="live-battles__block"  data-block="02">
                     <!-- IMAGES -->
                     <div class="picture__effect"><div class="js-effect"></div></div>
-                    <div class="picture--top"><img src="images/gamora.png" style="height:100%;" alt="First player"></div>
+                    <div class="picture--top"><img src="images/gamora.png" style="height:100%;" style="width:100%;" alt="First player"></div>
                     <div class="picture--bottom"><img src="images/batman.png" style="height:100%;" alt="Second player"></div>
                     <div class="live-battles__diagonal"></div>
                     <!-- TEXTS -->

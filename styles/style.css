@@ -1350,3 +1350,63 @@ footer {
     background-color: hsla(118, 68%, 31%, 0.651);
     bottom: 20px;
 }
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1280px) and (-webkit-min-device-pixel-ratio: 2) {
+
+    #fight {
+      width: 77%;
+    }
+    #chatbox {
+      margin-left: 77%;
+      width: 23%;
+    }
+    .live-battles__diagonal {
+      transform: translateX(-50%) translateY(-50%) rotate(25deg);
+    }
+    .live-battles__diagonal--duo {
+      transform: translateX(-50%) translateY(-50%) rotate(65deg);
+    }
+  
+    .profile__block {
+      left: 15%;
+    }
+  }
+  
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  
+    #fight {
+      width: 100%;
+      right: 10%;
+    }
+  
+    .leaderboard__block {
+      right: 15%;
+    }
+  
+    .live-battles__diagonal {
+      transform: translateX(-50%) translateY(-50%) rotate(20deg);
+    }
+    .live-battles__diagonal--duo {
+      transform: translateX(-50%) translateY(-50%) rotate(60deg);
+    }
+  }
+  
+  @media only screen and (min-device-width: 425px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+  
+    .profile__block {
+      top: 30%;
+      left: 33%;
+    }
+    .leaderboard-block {
+      top: 65%;
+      right: 25%;
+    }
+  
+    .live-battles__diagonal {
+      transform: translateX(-50%) translateY(-50%) rotate(15deg);
+    }
+    .live-battles__diagonal--duo {
+      transform: translateX(-50%) translateY(-50%) rotate(52deg);
+    }
+  }
+  
