@@ -21,9 +21,6 @@ require './Controls/createAccount.php';
                     <tr>
                         <td class="sign__email"><input type="text" name="email" placeholder="Email"></td>
                     </tr>
-                    <tr>
-                        <td class="sign__or"><p>And</p></td>
-                    </tr>
                     <tr class="sign__username">
                         <td><input type="text" name="pseudo" placeholder="Username"></td>
                     </tr>

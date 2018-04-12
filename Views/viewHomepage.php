@@ -5,7 +5,7 @@
 <?php ob_start(); ?>
 
     <section id="live-battles">
-        <div class="live-battles__title-block"><h1 class="live-battles__title">Live battle</h1></div>
+        <div class="live-battles__title-block"><h1 class="live-battles__title">Live battles</h1></div>
 
         <div class="live-battles__container">
             <div class="live-battles__blocks">
@@ -131,24 +131,29 @@
 
             <!-- PROFILE PART -->
             <div class="profile__block">
-                <div class="profile__picture"><img src="" alt=""></div>
-                <div class="profile__coins">1 800 coins</div>
-                <div class="profile__name">Raphaël Guenassia</div>
-                <div class="profile_all-bets">
-                    <span class="bets">
-                        <span class="bets__total">35</span><br />
-                        <span class="bets__desc">Bets</span>
-                    </span>
-                    <span class="won-bets">
-                        <span class="won-bets__total">16</span><br />
-                        <span class="won-bets__desc">Won</span>
-                    </span>
-                </div>
-                <div class="rank">
-                        <span class="rank__desc">Rank</span><br />
-                        <span class="rank__actual">300</span>
-                </div>
-            </div>
+                <?php if(isset($_SESSION['pseudo'])):?>
+                        <div class="profile__picture"><img src="https://ui-avatars.com/api/?name=<?=$_SESSION['pseudo']?>&background=4d669f&color=fff&rounded=true&size=75&length=1" alt=""></div>
+                        <div class="profile__coins"><?=$_SESSION['wallet']?> coins</div>
+                        <div class="profile__name"><?=$_SESSION['pseudo']?></div>
+                        <div class="profile_all-bets">
+                            <span class="bets">
+                                <span class="bets__total"><?=$_SESSION['numberbets']?></span><br />
+                                <span class="bets__desc">Bets</span>
+                            </span>
+                            <span class="won-bets">
+                                <span class="won-bets__total"><?=$_SESSION['numberbetswon']?></span><br />
+                                <span class="won-bets__desc">Won</span>
+                            </span>
+                        </div>
+                        <div class="rank">
+                                <span class="rank__desc">Rank</span><br />
+                                <span class="rank__actual">300</span>
+                        </div>
+                <?php endif;?>
+                <?php if(!isset($_SESSION['pseudo'])):?>
+                        <a href="./?action=signin"><div class="sign-in__redirect">Sign in</div></a>
+                <?php endif;?>
+                    </div>
 
             <!-- LEADERBOARD PART -->
             <div class="leaderboard-block">

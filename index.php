@@ -12,6 +12,8 @@ if (isset($_GET['action']) && ($_GET['action'] == 'fightpage')) {
     SignInPage();
 } elseif (isset($_GET['action']) && ($_GET['action'] == 'signup')) {
     SignUpPage();
-} else {
+} elseif (isset($_GET['action']) && ($_GET['action'] == 'signout')) {
+    SignOut();
+  } else {
     HomePage();  // by default
   }

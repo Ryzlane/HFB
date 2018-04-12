@@ -27,3 +27,8 @@ require_once './Modele/modele.php';
         require './Views/viewSignUppage.php';
         // fetchs, ...
     };
+
+    function SignOut() {
+        require 'signout.php';
+        // fetchs, ...
+    };

@@ -5,7 +5,7 @@
 <?php ob_start(); ?>
 
     <section id="fight">
-        <div class="bg-video"><div class="bg-video--content"></div><video playsinline autoplay muted loop><source src="Images/background.mp4" type="video/mp4"></video></div>
+        <div class="bg-video"><div class="bg-video--content"><video playsinline autoplay muted loop><source src="Images/background.mp4" type="video/mp4"></video></div></div>
 
         <span class="fight__timer">01:03</span>
         <!-- FIRST PLAYER -->

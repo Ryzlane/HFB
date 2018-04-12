@@ -42,10 +42,10 @@ It contains content common to all pages. -->
     <?php if(isset($_SESSION['pseudo'])):?>
         <table class="header__connected">
             <tr>
-                <td> <p class="connected__coins">1 800 coins</p></td>
-                <td><div class="connected__picture"></div></td>
-                <td><p class="connected__username">Burno</p></td>
-                <td><a class="connected__sign-out" href=""><i class="fas fa-power-off"></i></a></td>
+                <td> <p class="connected__coins"><?=$_SESSION['wallet']?> coins</p></td>
+                <td><div class="connected__picture"><img src="https://ui-avatars.com/api/?name=<?=$_SESSION['pseudo']?>&background=4d669f&color=fff&rounded=true&size=25&length=1&font-size=0.6" alt=""></div></td>
+                <td><p class="connected__username"><?=$_SESSION['pseudo']?></p></td>
+                <td><a class="connected__sign-out" href="./?action=signout"><i class="fas fa-power-off"></i></a></td>
             </tr>
         </table>
     <?php endif;?>
