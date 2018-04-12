@@ -1,22 +1,31 @@
-<?php $title = 'HFB | Fight'; ?>
+<?php $title = 'HFB | Fight 2vs2'; ?>
 
 
 <!-- Temporarily buffered (create the function content next) -->
 <?php ob_start(); ?>
 
     <section id="fight">
-        <div class="bg-video"><video playsinline autoplay muted loop><source src="Images/background.mp4" type="video/mp4"></video></div>
-        
+        <div class="bg-video"><div class="bg-video--content"></div><video playsinline autoplay muted loop><source src="Images/background.mp4" type="video/mp4"></video></div>
+
         <span class="fight__timer">01:03</span>
         <!-- FIRST PLAYER -->
         <div class="fight__first-player">
             <h1 class="player__name">GAMORA</h1>
             <div class="first-player__container">
                 <div class="first-player--color"></div>
+                <div class="first-player__number">1</div>
                 <img src="Images/gamora.png" width="100%" alt="">
             </div>
             <span class="bet--first-player"><a href="#">Bet</a></span>
             <p class="player__desc">Occupation: assassin<br />Race: Zen-Whoberian</p>
+        </div>
+        <div class="fight__first-player--02">
+            <h2 class="player__name--02">GAMORA</h2>
+            <div class="first-player__container--02">
+                <div class="first-player--color--02"></div>
+                <div class="first-player__number--02">2</div>
+                <img src="Images/gamora.png" width="100%" alt="">
+            </div>
         </div>
         <div class="fight__first-player__lifebar">
             <div class="first-player__lifebar__content"></div>
@@ -26,10 +35,19 @@
             <h1 class="player__name">BATMAN</h1>
             <div class="second-player__container">
                 <div class="second-player--color"></div>
+                <div class="second-player__number">1</div>
                 <img src="Images/batman.png" width="100%" alt="">
             </div>
             <span class="bet--second-player"><a href="#">Bet</a></span>
             <p class="player__desc">Occupation: businessman<br />Race: human</p>
+        </div>
+        <div class="fight__second-player--02">
+            <h2 class="player__name--02">BATMAN</h2>
+            <div class="second-player__container--02">
+                <div class="second-player--color--02"></div>
+                <div class="second-player__number--02">2</div>
+                <img src="Images/batman.png" width="100%" alt="">
+            </div>
         </div>
         <div class="fight__second-player__lifebar">
             <div class="second-player__lifebar__content"></div>

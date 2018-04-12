@@ -13,6 +13,11 @@ require_once './Modele/modele.php';
         // fetchs, ...
     };
 
+    function FightPage2vs2() {
+        require './Views/viewFightpage2vs2.php';
+        // fetchs, ...
+    };
+
     function SignInPage() {
         require './Views/viewSignInpage.php';
         // fetchs, ...

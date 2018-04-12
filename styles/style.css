@@ -54,6 +54,19 @@ header {
     z-index: 1;
 }
 
+.header__logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+.logo--red {
+    color: #ab2940;
+}
+
 /*** NOT SIGN ***/
 
 .header__sign {
@@ -86,11 +99,9 @@ header {
 }
 
 .connected__sign-out {
+    width: 20px;
     cursor: pointer;
 }
-
-
-
 
 /***************
 
@@ -673,9 +684,17 @@ footer {
 }
 
 .bg-video {
+    position: relative;
     height: 300px;
     width: 100%;
     overflow: hidden;
+}
+
+.bg-video--content {
+    position: absolute;
+    left: 100px;
+    width: 1000px;
+    height: 500px;
 }
 
 .fight__timer {
@@ -694,10 +713,10 @@ footer {
 .fight__first-player {
     position: absolute;
     text-align: center;
-    top: 100px;
-    left: 100px;
-    width: 300px;
-    height: 550px;
+    top: 130px;
+    left: 175px;
+    width: 250px;
+    height: 450px;
 }
 
 .player__name {
@@ -709,8 +728,8 @@ footer {
 
 .first-player__container {
     position: absolute;
-    height: 400px;
-    width: 300px;
+    height: 325px;
+    width: 100%;
     background-color: #656565;
     overflow: hidden;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -749,21 +768,36 @@ footer {
     text-align: left;
 }
 
+.fight__first-player__lifebar {
+    position: absolute;
+    top: 205px;
+    left: 472px;
+    width: 10px;
+    height: 280px;
+    background: #65656579;
+}
+
+.first-player__lifebar__content {
+    width: 100%;
+    height: 100%;
+    background-color: #4d669f;
+}
+
 /*** SECOND PLAYER ***/
 
 .fight__second-player {
     position: absolute;
     text-align: center;
-    top: 100px;
-    right: 100px;
-    width: 300px;
-    height: 550px;
+    top: 130px;
+    right: 175px;
+    width: 250px;
+    height: 450px;
 }
 
 .second-player__container {
     position: absolute;
-    height: 400px;
-    width: 300px;
+    height: 325px;
+    width: 100%;
     background-color: #656565;
     overflow: hidden;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -790,6 +824,140 @@ footer {
     line-height: 30px;
     font-weight: bold;
     cursor: pointer;
+}
+
+.fight__second-player__lifebar {
+    position: absolute;
+    top: 205px;
+    right: 472px;
+    width: 10px;
+    height: 280px;
+    background: #65656579;
+}
+
+.second-player__lifebar__content {
+    width: 100%;
+    height: 100%;
+    background-color: #ab2940;
+}
+
+/***************
+
+     2 vs 2
+
+***************/
+
+.first-player__number {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #4d669f;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.second-player__number {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #ab2940;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+}
+
+/*** NUMBER 02 ***/
+
+.player__name--02 {
+    font-size: 12px;
+    font-weight: bold;
+    color: #c6c4c5;
+    margin-bottom: 7px;
+}
+
+.fight__first-player--02 {
+    position: absolute;
+    text-align: center;
+    top: 210px;
+    left: 12px;
+    width: 150px;
+    height: 250px;
+}
+
+.first-player__container--02 {
+    position: absolute;
+    height: 200px;
+    width: 150px;
+    background-color: #656565;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.first-player--color--02 {
+    width: 80%;
+    height: 5px;
+    margin-left: 10%;
+    background-color: #4d669f;
+}
+
+.first-player__number--02 {
+    position: absolute;
+    right: 0;
+    top: 25px;
+    color: #c6c4c5;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #4d669f;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+}
+
+/*** NUMBER 02-02 ***/
+
+.fight__second-player--02 {
+    position: absolute;
+    text-align: center;
+    top: 210px;
+    right: 12px;
+    width: 150px;
+    height: 250px;
+}
+
+.second-player__container--02 {
+    position: absolute;
+    height: 200px;
+    width: 150px;
+    background-color: #656565;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.second-player--color--02 {
+    width: 80%;
+    height: 5px;
+    margin-left: 10%;
+    background-color: #ab2940;
+}
+
+.second-player__number--02 {
+    position: absolute;
+    left: 0;
+    top: 25px;
+    color: #c6c4c5;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #ab2940;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
 }
 
 /***************
