@@ -558,6 +558,7 @@ footer {
 .profile__name {
     font-size: 22px;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .bets {
@@ -569,6 +570,7 @@ footer {
 .bets__total {
     font-size: 22px;
     margin-top: 10px;
+    font-weight: bold;
 }
 
 .bets__desc {
@@ -585,6 +587,7 @@ footer {
 .won-bets__total {
     font-size: 22px;
     margin-top: 10px;
+    font-weight: bold;
 }
 
 .won-bets__desc {
@@ -607,6 +610,7 @@ footer {
 .rank__actual {
     font-size: 22px;
     margin-top: 10px;
+    font-weight: bold;
 }
 
 /*** SIGN IN REDIRECT ***/
@@ -684,6 +688,36 @@ footer {
 
 .leaderboard__table__won-bets {
     font-size: 22px;
+}
+
+#explanations {
+    position: relative;
+    width: 100%;
+    height: 1500px;
+}
+
+.explanations__title-block {
+    width: 130px;
+    height: 40px;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-bottom: 50px;
+    border: solid 2px #ab2940;
+    text-align: center;
+    line-height: 40px;
+}
+
+.explanations__title {
+    color: #ab2940;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.explanations__image {
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /***************
@@ -790,10 +824,10 @@ footer {
 
 .fight__first-player__lifebar {
     position: absolute;
-    top: 205px;
+    top: 266px;
     left: 472px;
     width: 10px;
-    height: 280px;
+    height: 220px;
     background: #65656579;
 }
 
@@ -848,10 +882,10 @@ footer {
 
 .fight__second-player__lifebar {
     position: absolute;
-    top: 205px;
+    top: 266px;
     right: 472px;
     width: 10px;
-    height: 280px;
+    height: 220px;
     background: #65656579;
 }
 

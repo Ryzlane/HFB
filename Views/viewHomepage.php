@@ -11,7 +11,7 @@
             <div class="live-battles__blocks">
 
                 <!-- 1 VS 1 -->
-                <div class="live-battles__block"  data-block="01">
+                <a href="./?action=fightpage"><div class="live-battles__block"  data-block="01">
                     <!-- IMAGES -->
                     <div class="picture__effect"></div>
                     <div class="picture--top"><img src="Images/gamora.png" height="100%" alt=""></div>
@@ -29,8 +29,8 @@
                             <h3 class="name-rating__name--bottom">BATMAN</h3>
                         </div>
                     </div>
-                </div>
-                <div class="live-battles__block"  data-block="02">
+                </div></a>
+                <a href="./?action=fightpage"><div class="live-battles__block"  data-block="02">
                     <!-- IMAGES -->
                     <div class="picture__effect"></div>
                     <div class="picture--top"><img src="Images/gamora.png" height="100%" alt=""></div>
@@ -48,8 +48,8 @@
                             <h3 class="name-rating__name--bottom">BATMAN</h3>
                         </div>
                     </div>
-                </div>
-                <div class="live-battles__block" data-block="03">
+                </div></a>
+                <a href="./?action=fightpage"><div class="live-battles__block" data-block="03">
                     <!-- IMAGES -->
                     <div class="picture__effect"></div>
                     <div class="picture--top"><img src="Images/gamora.png" height="100%" alt=""></div>
@@ -67,10 +67,10 @@
                             <h3 class="name-rating__name--bottom">BATMAN</h3>
                         </div>
                     </div>
-                </div>
+                </div></a>
 
                 <!-- 2 VS 2 -->
-                <div class="live-battles__block"  data-block="04">
+                <a href="./?action=fightpage2vs2"><div class="live-battles__block"  data-block="04">
                     <!-- IMAGES -->
                     <div class="picture__effect--duo"></div>
                     <div class="pictures--top">
@@ -94,8 +94,8 @@
                             <h4 class="name-rating__rating--bottom--duo">1,55</h4>
                         </div>
                     </div>
-                </div>
-                <div class="live-battles__block"  data-block="05">
+                </div></a>
+                <a href="./?action=fightpage2vs2"><div class="live-battles__block"  data-block="05">
                     <!-- IMAGES -->
                     <div class="picture__effect--duo"></div>
                     <div class="pictures--top">
@@ -119,7 +119,7 @@
                             <h4 class="name-rating__rating--bottom--duo">1,55</h4>
                         </div>
                     </div>
-                </div>
+                </div></a>
             </div>
         </div>
     </section>
@@ -195,6 +195,11 @@
             </div>
 
         </div>
+    </section>
+
+    <section id="explanations">
+        <div class="explanations__title-block"><h1 class="explanations__title">Explanations</h1></div>
+        <div class="explanations__image"><img src="Images/explanations.png" width="100%" alt=""></div>
     </section>
 
 <?php $content = ob_get_clean(); ?>
