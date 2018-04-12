@@ -12,3 +12,4 @@ A school project about super heroes
 
 * SuperHero API (http://www.superheroapi.com/)
 * UI Avatars (https://ui-avatars.com/)
+* Mail Box Layer (https://mailboxlayer.com/)

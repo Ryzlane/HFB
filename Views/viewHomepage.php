@@ -1,4 +1,23 @@
-<?php $title = 'HFB | Home'; ?>
+<?php $title = 'HFB | Home'; 
+
+try
+{
+    // Try to connect to database
+    $pdo = new PDO('mysql:host='.DB_HOST.';dbname='.DB_NAME.';port='.DB_PORT, DB_USER, DB_PASS);
+
+    // Set fetch mode to object
+    $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
+}
+catch (Exception $e)
+{
+    // Failed to connect
+    die('Could not connect');
+}
+
+$query = $pdo->query('SELECT * FROM users ORDER BY wallet desc LIMIT 5');
+$users = $query->fetchAll();
+
+?>
 
 <!--Temporarily buffered (create the function content next)-->
 
@@ -132,7 +151,7 @@
             <!-- PROFILE PART -->
             <div class="profile__block">
                 <?php if(isset($_SESSION['pseudo'])):?>
-                        <div class="profile__picture"><img src="https://ui-avatars.com/api/?name=<?=$_SESSION['pseudo']?>&background=4d669f&color=fff&rounded=true&size=75&length=1" alt=""></div>
+                        <div class="profile__picture"><img src="https://ui-avatars.com/api/?name=<?=$_SESSION['pseudo']?>&background=4d669f&color=fff&rounded=true&size=75&length=1" alt="your avatar"></div>
                         <div class="profile__coins"><?=$_SESSION['wallet']?> coins</div>
                         <div class="profile__name"><?=$_SESSION['pseudo']?></div>
                         <div class="profile_all-bets">
@@ -158,39 +177,17 @@
             <!-- LEADERBOARD PART -->
             <div class="leaderboard-block">
                 <div class="leaderboard__title">Leaderboard</div>
-                <div class="leaderboard__won-bets">Won bets</div>
+                <div class="leaderboard__won-bets">Coins</div>
                 
                 <table class="leaderboard__table">
+                    <?php $i=1; foreach($users as $_user):?>
                     <tr>
-                        <td class="leaderboard__table__number">1</td>
-                        <td class="leaderboard__table__picture"><div class="table__picture"><img src="" alt=""></div></td>
-                        <td class="leaderboard__table__name">Ryzlane Arsac-Gothière</td>
-                        <td class="leaderboard__table__won-bets">110</td>
+                        <td class="leaderboard__table__number"><?= $i ?></td>
+                        <td class="leaderboard__table__picture"><div class="table__picture"><img src="https://ui-avatars.com/api/?name=<?=$_user->pseudo?>&background=4d669f&color=fff&rounded=true&size=35&length=1" alt="player avatar"></div></td>
+                        <td class="leaderboard__table__name"><?= $_user->pseudo ?></td>
+                        <td class="leaderboard__table__won-bets"><?= $_user->wallet ?></td>
                     </tr>
-                    <tr>
-                        <td class="leaderboard__table__number">2</td>
-                        <td class="leaderboard__table__picture"><div class="table__picture"><img src="" alt=""></div></td>
-                        <td class="leaderboard__table__name">Ryzlane Arsac-Gothière</td>
-                        <td class="leaderboard__table__won-bets">110</td>
-                    </tr>
-                    <tr>
-                        <td class="leaderboard__table__number">3</td>
-                        <td class="leaderboard__table__picture"><div class="table__picture"><img src="" alt=""></div></td>
-                        <td class="leaderboard__table__name">Ryzlane Arsac-Gothière</td>
-                        <td class="leaderboard__table__won-bets">110</td>
-                    </tr>
-                    <tr>
-                        <td class="leaderboard__table__number">4</td>
-                        <td class="leaderboard__table__picture"><div class="table__picture"><img src="" alt=""></div></td>
-                        <td class="leaderboard__table__name">Ryzlane Arsac-Gothière</td>
-                        <td class="leaderboard__table__won-bets">110</td>
-                    </tr>
-                    <tr>
-                        <td class="leaderboard__table__number">5</td>
-                        <td class="leaderboard__table__picture"><div class="table__picture"><img src="" alt=""></div></td>
-                        <td class="leaderboard__table__name">Ryzlane Arsac-Gothière</td>
-                        <td class="leaderboard__table__won-bets">110</td>
-                    </tr>
+                    <?php endforeach;?>
                 </table>
             </div>
 

@@ -698,9 +698,6 @@ footer {
 .table__picture {
     width: 35px;
     height: 35px;
-    -webkit-clip-path: circle(50% at 50% 50%);
-    clip-path: circle(50% at 50% 50%);
-    background-color: black;
 }
 
 .leaderboard__table__name {
@@ -710,6 +707,7 @@ footer {
 
 .leaderboard__table__won-bets {
     font-size: 22px;
+    text-align: right;
 }
 
 #explanations {
@@ -1276,6 +1274,10 @@ footer {
     line-height: 30px;
 }
 
+.sign__title-block, .--forgotten {
+    width: 200px;
+}
+
 .sign__title {
     color: #ab2940;
     font-size: 14px;
@@ -1295,6 +1297,10 @@ footer {
     padding-top: 30px;
     padding-bottom: 5px;
     font-weight: bold;
+}
+
+.sign__password--forget a {
+    color: rgb(102, 102, 211);
 }
 
 .sign__email, .sign__username, .sign__password {

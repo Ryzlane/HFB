@@ -4,7 +4,7 @@ $errorMessagesLogin = [];
 $successMessagesLogin = [];
 $logstate = [];
 
-require './Controls/connectAccount.php';
+require './controls/connectAccount.php';
 
 ?>
 
@@ -27,6 +27,9 @@ require './Controls/connectAccount.php';
                     </tr>
                     <tr class="sign__password">
                         <td><input type="password" name="password" placeholder="password"></td>
+                    </tr>
+                    <tr>
+                        <td class="sign__password--forget"><a href="./?action=forgottenpassword">Forget your password?</a></td>
                     </tr>
                     <tr>
                         <td class="sign__confirm"><input type="submit" name="submit" value="Sign in"></td>

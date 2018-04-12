@@ -1,30 +1,35 @@
 <?php
 
-require_once './Modele/modele.php';
+require_once './modele/modele.php';
 
 // Functions that group fetchs and view
     function HomePage() {
-        require './Views/viewHomepage.php';
+        require './views/viewhomepage.php';
         // fetchs, ...
     };
 
     function FightPage() {
-        require './Views/viewFightpage.php';
+        require './views/viewfightpage.php';
         // fetchs, ...
     };
 
     function FightPage2vs2() {
-        require './Views/viewFightpage2vs2.php';
+        require './views/viewfightpage2vs2.php';
         // fetchs, ...
     };
 
     function SignInPage() {
-        require './Views/viewSignInpage.php';
+        require './views/viewsigninpage.php';
         // fetchs, ...
     };
 
     function SignUpPage() {
-        require './Views/viewSignUppage.php';
+        require './views/viewsignuppage.php';
+        // fetchs, ...
+    };
+
+    function ForgottenPage() {
+        require './Views/viewforgottenpassword.php';
         // fetchs, ...
     };
 
