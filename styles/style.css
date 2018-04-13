@@ -1221,6 +1221,62 @@ footer {
     font-weight: bold;
 }
 
+.chatbox__message {
+    position: relative;
+    width: 70%;
+    left: 10%;
+    top: 450px;
+    margin-bottom: 25px;
+}
+
+.--you {
+    left: 20%;
+}
+
+.message--other__pseudo {
+    position: absolute;
+    top: -12px;
+    left: 0;
+    font-weight: bold;
+    color: #4d669f;
+}
+
+.message--you__pseudo {
+    position: absolute;
+    top: -12px;
+    right: 0;
+    font-weight: bold;
+    color: #ab2940;
+}
+
+.message--other__date {
+    position: absolute;
+    top: -12px;
+    right: 0;
+    font-weight: bold;
+    color: #4d669f;
+}
+
+.message--you__date {
+    position: absolute;
+    top: -12px;
+    left: 0;
+    font-weight: bold;
+    color: #ab2940;
+}
+
+.message__content {
+    border: solid 0.5px #4d669f;
+    height: 45px;
+    width: 100%;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.--you .message__content {
+    border: solid 0.5px #ab2940;
+}
+
 .chatbox__form {
     position: absolute;
     bottom: 0;
@@ -1232,14 +1288,14 @@ footer {
     border-top: 1px solid #9c9c9c;
 }
 
-.chatbox__message {
+.form__message {
     padding: 10px;
     height: 100%;
     width: 100%;
     border-right: 1px solid #9c9c9c;
 }
 
-.chatbox__submit {
+.form__submit {
     text-align: center;
     color: #9c9c9c;
 }

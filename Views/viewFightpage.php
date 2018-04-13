@@ -61,10 +61,25 @@
 
     <!-- CHATBOX -->
     <section id="chatbox">
+            <div class="chatbox__message --other">
+                <div class="message--other__pseudo">Burno</div>
+                <div class="message--other__date">1pm</div>
+                <div class="message__content"><p>All my coins on Jar Jar Binks!</p></div>
+            </div>
+            <div class="chatbox__message --other">
+                <div class="message--other__pseudo">Etienne</div>
+                <div class="message--other__date">1.02pm</div>
+                <div class="message__content"><p>Hello world!</p></div>
+            </div>
+            <div class="chatbox__message --you">
+                <div class="message--you__pseudo">Me</div>
+                <div class="message--you__date">1.05pm</div>
+                <div class="message__content"><p>Take my money!</p></div>
+            </div>
             <table class="chatbox__form">
                 <tr>
-                    <td ><input class="chatbox__message" placeholder="Type a message..." type="textarea"></td>
-                    <td class="chatbox__submit"><input type="submit" value="Submit"></td>
+                    <td ><input class="form__message" placeholder="Type a message..." type="textarea"></td>
+                    <td class="form__submit"><input type="submit" value="Submit"></td>
                 </tr>
             </table>
     </section>
